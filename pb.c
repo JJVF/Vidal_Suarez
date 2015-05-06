@@ -45,7 +45,7 @@ int main(int argc, char** argv)
 {
 	int balls[6];
 	int count_balls = 0;
-	int favorite = 0;   // this should be a bool
+	int favourite = 0;   // this should be a bool
 
 	for (int i=1; i<argc; i++)
 	{
@@ -73,7 +73,7 @@ int main(int argc, char** argv)
 
 	}
 
-	if (favorite)
+	if (favourite)
 	{
 
 	result = result * 2;
@@ -85,7 +85,7 @@ int main(int argc, char** argv)
 return 0;
 
 usage_error:
-	fprintf(stderr, "Usage: %s [-favorite] (5 white balls)power_ball\n", argv[0]);
+	fprintf(stderr, "Usage: %s [-favourite] (5 white balls)power_ball\n", argv[0]);
 
 	return-1;
 }
