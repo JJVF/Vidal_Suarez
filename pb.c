@@ -37,7 +37,7 @@ int calculate_result(int white_balls[5], int power_ball)
     }
   // lottery ball numbers are always shown sorted
   qsort(white_balls, 5, sizeof(int), my_sort_func);
-
+  //here should be typed to function to calculate the probability
   return 0;
 }
 
