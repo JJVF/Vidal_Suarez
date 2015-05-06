@@ -1,1 +1,2 @@
-gcc -std=c99 -Wall - Wextra -Werror pb.c -o pb
+all: pb.c	
+	gcc -std=c99 -Wall -Wextra -Werror pb.c -o pb
