@@ -6,7 +6,16 @@
 #define MAX_WHITE_BALL 59
 #define MAX_POWER_BALL 39
 
-
+void checkwhiteballs(int balls[5], int control)
+{
+ int last = balls[control];
+ for (int i = 0; i < control; i++){
+ if (last == balls[i]){
+ balls[control] = whiteballs_computer_generated();
+ break;
+ }
+ }
+}
 static int my_sort_func(const void* p1, const void* p2)
 {
 	int v1 = *((int *) p1);
@@ -82,7 +91,9 @@ int main(int argc, char** argv)
 
 	}
 
-	if (6 != count_balls) { for (int i = 0; i < 5; i++){ balls[i] = whiteballs_computer_generated(); } balls[5] = powerball_computer_generated(); // Power ball 
+	if (6 != count_balls) { for (int i = 0; i < 5; i++){
+ balls[i] = whiteballs_computer_generated();
+checkwhiteballs(balls, i); } balls[5] = powerball_computer_generated(); // Power ball 
 printf("Your numbers are: "); 
 for (int i = 0; i < 5; i++){
 
