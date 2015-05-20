@@ -41,11 +41,16 @@ int calculate_result(int white_balls[5], int power_ball)
   return 0;
 }
 
+int whiteballs_computer_generated() { return rand()%59+1; } int powerball_computer_generated() { return rand()%39+1; } 
 int main(int argc, char** argv)
 {
 	int balls[6];
 	int count_balls = 0;
 	int favourite = 0;   // this should be a bool
+	if (6 != count_balls) { for (int i = 0; i < 5; i++){ balls[i] = whiteballs_computer_generated(); } balls[5] = powerball_computer_generated(); // Power ball printf("Your numbers are: "); 
+for (int i = 0; i < 5; i++){
+printf("%d ", balls[i]); } printf("\nAnd the power ball:"); printf(" %d\n", balls[5]); }
+
 
 	for (int i=1; i<argc; i++)
 	{
