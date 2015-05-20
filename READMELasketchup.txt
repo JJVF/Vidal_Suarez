@@ -1,0 +1,1 @@
+Este es el entorno de trabajo del equipo Las ketchup, donde trabajan los alumnos: Marta Jimenez y Amanda Oliver, en el que almacenarán los ficheros de la clase de prácticas de la asignatura Evolución del Software
