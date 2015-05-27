@@ -60,6 +60,7 @@ printf("Your sorted numbers: \n");
   }
   printf("The power ball: %d \n", power_ball);
  }
+
 int whiteballs_computer_generated() { return rand()%MAX_WHITE_BALL+1; } 
 int powerball_computer_generated() { return rand()%MAX_POWER_BALL+1; }
 int main(int argc, char** argv)
@@ -110,7 +111,8 @@ int main(int argc, char** argv)
 checkwhiteballs(balls, i); } balls[5] = powerball_computer_generated(); // Power ball 
 printf("Your numbers are: "); 
 for (int i = 0; i < 5; i++){
-
+	printf ("\n--- The lottery numbers---\n");
+	lottery_numbers_simulation();
 	printf("%d percent chance of winning\n", result);
 printf("%d ", balls[i]); } printf("\nAnd the power ball:"); printf(" %d\n", balls[5]); }
 
