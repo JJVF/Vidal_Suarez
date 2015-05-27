@@ -50,8 +50,8 @@ int calculate_result(int white_balls[5], int power_ball)
   return 0;
 }
 
-int whiteballs_computer_generated() { return rand()%59+1; } 
-int powerball_computer_generated() { return rand()%39+1; }
+int whiteballs_computer_generated() { return rand()%MAX_WHITE_BALL+1; } 
+int powerball_computer_generated() { return rand()%MAX_POWER_BALL+1; }
 int main(int argc, char** argv)
 {
 	int balls[6];
