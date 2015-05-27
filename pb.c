@@ -87,6 +87,8 @@ int main(int argc, char** argv)
 	//calculate result can return -1 if the ball numbers
 	// are out of range
 printf("\n--- The lottery numbers ---\n");
+
+
 printf("Lottery numbers simulation");
 int result = calculate_result(balls, power_ball);
 showing_results(balls, power_ball);
