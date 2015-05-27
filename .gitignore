@@ -1,0 +1,7 @@
+# Ejecutables
+*.exe
+*.out
+*.app
+# Otros
+*.o
+*.orig
