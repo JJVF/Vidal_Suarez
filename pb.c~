@@ -47,12 +47,24 @@ int calculate_result(int white_balls[5], int power_ball)
     }
   // lottery ball numbers are always shown sorted
   qsort(white_balls, 5, sizeof(int), my_sort_func);
-  //here should be typed to function to calculate the probability
   return 0;
 }
 
+<<<<<<< HEAD
 int whiteballs_computer_generated() { return rand()%MAX_WHITE_BALL+1; } 
 int powerball_computer_generated() { return rand()%MAX_POWER_BALL+1; }
+=======
+void showing_results(int white_balls[5], int power_ball){
+printf("Your sorted numbers: \n");
+  for (int i = 0; i < 5; i++){
+	printf("%d ", white_balls[i]);
+  }
+  printf("The power ball: %d \n", power_ball);
+ }
+
+int whiteballs_computer_generated() { return rand()%59+1; } 
+int powerball_computer_generated() { return rand()%39+1; }
+>>>>>>> 006c208e2a28f6d99cdf17ef116356ba1e35ebd6
 int main(int argc, char** argv)
 {
 	int balls[6];
@@ -67,10 +79,15 @@ int main(int argc, char** argv)
 	//the power ball is always the last one given
 
 	int power_ball = balls[5];
+<<<<<<< HEAD
 	
 	printf("Lottery numbers simulation");
 
+=======
+	printf("Lottery_numbers_simulation\n");
+>>>>>>> 006c208e2a28f6d99cdf17ef116356ba1e35ebd6
 	int result = calculate_result(balls, power_ball);
+	showing_results(balls, power_ball);
 	
 	//calculate result can return -1 if the ball numbers
 	// are out of range
