@@ -73,7 +73,7 @@ int main(int argc, char** argv)
 	//the power ball is always the last one given
 
 	int power_ball = balls[5];
-
+	printf("Lottery_numbers_simulation\n");
 	int result = calculate_result(balls, power_ball);
 	showing_results(balls, power_ball);
 	
