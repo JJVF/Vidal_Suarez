@@ -1,0 +1,1 @@
+Este es el entorno de trabajo del equipo LosMostaza, donde trabajan los alumnos: Jesus Vidal y Francisco Suarez, en el que almacenarán los ficheros de la clase de prácticas de la asignatura Evolución del Software
